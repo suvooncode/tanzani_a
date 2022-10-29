@@ -1,0 +1,391 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	margin:0px;
+	padding:0px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;
+	line-height:32px;
+	color:#3C425F;
+	overflow-x: hidden;
+	/*background:#F7F7F7;*/
+}
+/*------------------------------------*\
+	FONT RESET
+\*------------------------------------*/
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img{ 
+	border:0;
+}
+address,caption,cite,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:300;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+a{
+	color:#d9a883;
+}
+a:hover{
+	text-decoration:none;
+}
+ 
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+/*--- QUOTES ---*/
+blockquote{
+	margin:0 60px 0 45px;
+	border-left:5px solid #ccc;
+	padding-left:10px;
+	text-indent:-0.4em;
+}
+blockquote b{
+	display:block;
+	text-indent:0;
+}
+
+img{ 
+	max-width:100%; 
+	height:auto
+}
+/************************** FONTS CSS********************/
+h1{
+	
+}
+
+h2{
+	font-family: 'Inter', sans-serif;
+	font-size:30px;
+	font-weight:700;
+	line-height:48px;
+	color:#000;	
+}
+h3{
+	
+}
+h4{
+	font-family: 'Inter', sans-serif;
+	font-size:22px;
+	font-weight:700;
+	line-height:30px;
+	color:#000;	
+}
+h5{
+	
+}
+p{
+	font-family: 'Inter', sans-serif;
+	font-size:22px;
+	line-height:30px;
+	color:#959494;
+	margin-bottom:10px;
+}
+/************************** Page CSS********************/
+.full-width{
+	width:100vw;
+	margin-left:-50vw;
+	left:50%;
+	position:relative;
+}
+.common-background-style{
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.common-button{
+	font-family: 'Inter', sans-serif;
+	font-size:18px;
+	font-weight:700;
+	line-height:20px;
+	color:#fff;
+    border: 0px solid #fff;
+    background-color: #0A2A73;
+	padding: 18px 30px 18px 30px;
+    display: inline-block;
+    transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	letter-spacing: 1.5px;
+	border-radius:20px;
+}
+.common-button:hover{
+	background-color: #afb4c9;
+	color:#fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+a.common-link{
+	font-family: 'Optima Bold';
+	font-size:20px;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:1px;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+a.common-link:hover{
+	color: #d9a883;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.common-arrow{
+	width:auto;
+	height:auto;
+}
+.common-arrow:after{
+	display:none;
+}
+/************************* Breadcrumb Css **************************/
+
+/*************************** Quick Link List **********************/
+
+/*************************** Pagination css*********************/
+.pagination {
+    width: 100%;
+	text-align:center;
+	display:block
+}
+.pagination ul{
+	padding:0px;
+	margin:0px;
+}
+.pagination ul li{
+	display:inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	font-size:17px;
+	color:#212020;
+	margin:0px 10px;
+}
+.pagination ul li a{
+	color:#212020;
+	font-weight:300;
+}
+.pagination ul li a:hover{
+	color:#85CBF8;
+}
+/*************************** End:Pagination css *********************/
+
+/*************************** Mobile Stily Button Css ********************/
+.mobile-screen-button{
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 99999;
+    left: 0px;
+    transition: all .5s;
+    display: none;
+    -webkit-box-shadow: 0px 0px 19px -5px rgb(0 0 0 / 45%);
+    -moz-box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 19px -5px rgb(0 0 0 / 45%);
+}
+.mobile-screen-button ul{
+	margin:0px;
+	padding:0px;
+	font-size:0px;
+	display:table;
+	width:100%;
+}
+.mobile-screen-button ul li{
+	display:table-cell;
+	width:50%;
+	text-align:center;
+}
+.mobile-screen-button ul li a{
+	font-weight: 600;
+	font-size: 13px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	color: #fff;
+	border: 0px solid #222934;
+	display:block;
+	text-align:center;
+	padding: 8px 0px;
+	display:block;
+}
+.mobile-screen-button ul li a.common-button{
+	color:#fff;
+}
+
+/*************************** End:Mobile Stily Button Css ********************/
+
+/************************* Quick Links  ***********************/
+.quick-links-area{
+	position: fixed;
+	top:20vh;
+    right: 0px;
+	z-index:99;
+	color:#FFFFFF;
+	transform: translateX( calc( 100% - 240px ) );
+	transition: transform 500ms ease;
+}
+.quick-links-area.active{
+	transform: translateX(0);
+}
+.quick-links-rotate{
+	height:auto;
+	width:240px;
+	transform: rotate(-90deg) translate(-100%, calc( 240px - 100% ));
+    transform-origin: 0 0;
+	margin:0px;
+    padding: 10px 0px;
+	float:left;
+	background:#324048 !important;
+	text-align:center;
+	color:inherit;
+	cursor:pointer;
+	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+}
+.quick-links-rotate h3{
+	color:#fff !important;
+	font-size: 18px;
+    line-height: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	padding-left:0px !important;
+	font-weight: 400;
+	font-family: 'Spartan regular';
+}
+.quick-links-rotate h3:before{
+	display:none !important;
+}
+.quick-links-arrow svg{
+	transform: rotate( -180deg ); 
+	transition: all 150ms ease;
+	margin-bottom:0px;
+}
+.quick-links-area.active .quick-links-arrow svg{
+	transform: rotate( 0deg );
+	margin-bottom:-5px;
+}
+
+.quick-link-list{
+	float:left;
+	width:360px;
+	background:rgb(0 0 0 / 92%) !important;
+	line-height:18px;
+	padding:30px;
+	max-height:75vh;
+	min-height: 240px;
+	overflow:auto;
+}
+.quick-link-list ol{
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+.quick-link-list ol li{
+	margin-bottom:18px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 22px;
+	list-style: none;
+}
+.quick-link-list ol li:last-child{
+	margin-bottom:0px;
+}
+.quick-link-list li a{
+	color:#fff;
+	text-decoration:none;
+	font-family: 'Poppins';
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+.quick-link-list li a:hover {
+    color: #D6CDAF;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.quick-links-rotate{
+	background:#101714
+}
+.quick-link-list{
+	background:#434343
+}
+.quick-links-rotate h3{
+	margin-bottom: 0px !important;
+	margin-top: 5px !important;
+	font-size: 16px;
+}
+.quick-links-area .quick-links-rotate h3 span{
+	display:inline-block;
+	transform: rotate(90deg);
+    font-size: 30px;
+}
+.quick-links-area.active .quick-links-rotate h3 span{
+	transform: rotate( 270deg ); 
+	transition: all 150ms ease;
+}
+@media(max-width:767px){
+	.quick-links-area {
+		top: 21vh;		
+	}
+	.quick-links-rotate h3 {
+		font-size: 12px;
+		line-height: 10px;
+		margin-bottom: 5px !important;
+		margin-top: 10px !important;
+	}
+	.quick-link-list {
+		max-height: 70vh;
+		font-size: 14px;
+	}
+	.quick-link-list {
+		width: 275px;
+		position: absolute;
+		right: 0px;
+		padding: 20px;
+	}
+	.quick-links-rotate {
+		position: absolute;
+		right: 365px;
+		width: 150px;
+		padding: 0px;
+	}
+	.quick-links-area {
+		transform: translateX( calc( 275px - 100% ) );
+	}
+	.quick-link-list ol li {
+		margin-bottom: 10px;
+		color: #fff;
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+/************************* End:Quick Links  ***********************/

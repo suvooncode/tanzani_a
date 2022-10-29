@@ -1,0 +1,9 @@
+1. forgot pass ==>done
+2. specification add admin panel ==>done
+3. ajax subcategory fecth and specification
+4. user edit option in admin ==>done
+5. post list in admin panel ==>done
+6. url routing
+7. Back to index page from postadd.php =>Done
+8. post details show specification
+9. add user first name in view header =>Done

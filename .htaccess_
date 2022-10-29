@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^details/([^/\.]+)/?$ details.php?post=$1 [L]
+RewriteRule ^blog/([^/\.]+)/?$ blog.php?url=$1 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L] 

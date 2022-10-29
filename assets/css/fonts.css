@@ -1,0 +1,14 @@
+/******************* All fonts *********************/
+
+@font-face {
+    font-family: 'Optima Bold';
+    src: url('../fonts/Optima-Bold.eot');
+    src: url('../fonts/Optima-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Optima-Bold.woff2') format('woff2'),
+        url('../fonts/Optima-Bold.woff') format('woff'),
+        url('../fonts/Optima-Bold.ttf') format('truetype'),
+        url('../fonts/Optima-Bold.svg#Optima-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

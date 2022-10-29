@@ -1,0 +1,11 @@
+# Turn on the rewrite engine
+RewriteEngine  on
+
+RewriteRule ^details/([^/\.]+)/?$ details.php?post=$1 [L]
+RewriteRule ^search/([^/\.]+)/?$ search.php?city_name=$1 [L]
+
+RewriteRule ^search/([^/\.]+)/([^/\.]+)/?$ search.php?city_name=$1&cat_name=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L] 
