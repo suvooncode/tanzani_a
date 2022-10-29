@@ -13,6 +13,7 @@ $response_status = "none";
     {
         $finduser= find("first","user","*"," where user_name='$email' and password='$password' and is_admin='Y'",array());
 
+        $_SESSION['is_admin']= "Y";
         $_SESSION['user_id']=$finduser["user_id"];
         $_SESSION["email"]=$finduser["email"];
         $_SESSION["role"]= "admin";

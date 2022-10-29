@@ -15,6 +15,13 @@ if(!$link)
 }
 if(isset($_SESSION["user_id"]))
 {
+	if($_SESSION['is_admin']=="Y")
+	{
+
+	}
+	else {
+		redirectfn("index.php");
+	}
 
 }
 else{
